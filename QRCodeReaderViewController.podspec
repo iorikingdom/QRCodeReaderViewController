@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'QRCodeReaderViewController'
-  s.version               = '4.0.2'
+  s.version               = '4.0.3'
   s.license               = { :type => 'MIT', :file => 'LICENSE' }
   s.summary               = 'Simple QRCode reader for iOS 7 and over'
   s.description           = 'The `QRCodeReaderViewController` is a simple QRCode and bar code reader/scanner based on the `AVFoundation` framework from Apple. It aims to replace ZXing or ZBar for iOS 7 and over.'
@@ -12,5 +12,7 @@ Pod::Spec.new do |s|
   s.requires_arc          = true
   s.source_files          = ['QRCodeReaderViewController/*.{h,m}']
   s.framework             = 'AVFoundation'
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '12.0'
+  s.platform              = :ios, '12.0'
+
 end
